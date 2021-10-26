@@ -5,42 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Contato</title>
 </head>
 
 <body>
+    <header
+        style="background-image: url(https://i.pinimg.com/originals/9e/62/4b/9e624bf0f60db7fa6cb5c01850b95e02.png);">
 
-    <ul>
-        <li>
-            <a href="index.html">Home</a>
-        </li>
-        <li>
-            <a href="contato.html">Contato</a>
-        </li>
-    </ul>
-    <h1>Entre em contato comigo</h1>
 
-    <form>
-        <label for="nome">Nome:</label> <br>
-        <input type="text" id="nome">
-        <br>
-        <label for="email">E-mail</label> <br>
-        <input type="email" id="email">
-        <br>
-        <label for="assunto">Assunto</label> <br>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <br>
-        <br>
-        <button>Enviar</button>
-    </form>
+        <img id="eu" src="assets/img/alvaro foto.jpg" height="200" width="200" alt="Minha foto">
+        <nav id="menu">
 
-    <h2>Endereço:</h2>
-    <p>R. Maria Cândida de Andrade, 91 - Centro, Resende Costa - MG, 36340-000</p>
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.807421778489!2d-44.23790928544817!3d-20.920066175257983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa1a56edc6123cf%3A0xf8d0ec448d26490a!2sPrefeitura%20Municipal%20de%20Resende%20Costa!5e0!3m2!1spt-BR!2sbr!4v1634773222236!5m2!1spt-BR!2sbr"
-        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
 
-    </form>
+        </nav>
+
+    </header>
+
+
+
+
+    <div class="fundo">
+        <form>
+            <u>
+                <h1>Entre em contato comigo</h1>
+            </u>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" onkeyup='validaNome()'>
+            <div id='txtNome'></div>
+            <br>
+            <label for="email">E-mail:</label><br>
+            <input type="text" id="email" onkeyup='validaEmail()'>
+            <div id='txtEmail'></div>
+            <br>
+            <label for="assunto">Assunto:</label><br>
+            <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+            <div id='txtAssunto'></div>
+            <br>
+            <button onclick="enviar()">Enviar</button>
+        </form>
+    </div>
+
+    <hr>
+
+    <div class="fundomaps">
+
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117116.74337376034!2d-46.40393782794473!3d-23.46413516368632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7c928fd7510d%3A0x45e2e8f415e0b432!2sItaquaquecetuba%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1635229323830!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </iframe>
+
+
+
+    </div>
+
+   
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
