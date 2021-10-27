@@ -1,20 +1,21 @@
 body{
-    background-color: rgb(62, 49, 179);
-    background-repeat: no-repeat;
+    background-image: url(https://i.pinimg.com/originals/9e/62/4b/9e624bf0f60db7fa6cb5c01850b95e02.png);
+    background-color: rgb(206, 211, 218);
+    background-repeat: repeat;
     background-size: cover;
 }
 header #eu{
     border-radius: 50%;  
     position: relative;
     top:10px;
-    left: 42%; 
+    left: 44%; 
 }
 header {
 background-repeat: no-repeat;
 background-size: cover;
 }
 #menu ul {
-    background-color: #1e7ebe;
+    background-image: url(https://i.pinimg.com/originals/9e/62/4b/9e624bf0f60db7fa6cb5c01850b95e02.png);
     list-style:none;
     
     
@@ -22,7 +23,7 @@ background-size: cover;
 #menu ul li {
     display: inline; 
     position:relative;
-    left: 43%;
+    left: 45%;
     top: 50%;
     padding: 1px;
    
@@ -31,14 +32,14 @@ background-size: cover;
 #menu ul li a {
     padding: 10px 10px;
     display: inline-block;
-    background-color: #1e7ebe;
-    color: white;  
+    background-color: #271188;
+    color: rgb(255, 255, 255);  
     text-decoration: none;
     
 }
 #menu ul li a:hover {
-    background-color:#D6D6D6;
-    color: #271188;
+    background-color:#d6d6d6;
+    color: #000000;
     
 }
 .quadrado{
@@ -49,7 +50,11 @@ background-size: cover;
 }
 
 .fundo{
-    background-color: #1e7ebe;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 500;
     height: 360px;
     width: 600px;
     position:relative;
@@ -60,7 +65,7 @@ background-size: cover;
     left: 10%;
 }
 .fundomaps{
-    background-color: #1e7ebe;
+    text-align: center;
     position:relative;
     left: 27%;
     height: 330px;
@@ -69,9 +74,26 @@ background-size: cover;
 }
 
 .fundomaps iframe{
+    text-align: center;
     position:relative;
     top: 15px;
-    left: 15%;
+    left: 8%;
 }
 
+
+.txtMapa{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 500;
+   
     
+    
+
+}
+
+.tm-social{
+    width: 50px;
+    height: 50px;
+}
